@@ -978,3 +978,6 @@ button.option-button:hover {
     background: #fda908;
     color: white;
 }
+.kudu_msg a {
+    color: #ffa800;
+}
