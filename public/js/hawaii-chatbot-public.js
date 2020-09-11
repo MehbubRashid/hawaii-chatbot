@@ -53,7 +53,7 @@
 		});
 
 		var logics = {
-			text: "Are you a RN or CAN?",
+			text: "Are you a RN or CNA?",
 			Yes: {
 				text: "Please choose an option",
 				"I am a travel caregiver": {
@@ -100,7 +100,7 @@
 				}
 			},
 			No: {
-				action: "We can offer employment only to licensed RN and CAN"
+				action: "We can offer employment only to licensed RN and CNA"
 			}
 		}
 
