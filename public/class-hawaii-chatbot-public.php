@@ -96,7 +96,7 @@ class Hawaii_Chatbot_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/hawaii-chatbot-public.min.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, 'https://mehbubrashid.github.io/hawaii-chatbot/public/js/bootstrap.min.js', array( 'jquery' ), $this->version, false );
 		$js_object = array(
 			'imgurl' => plugin_dir_url( __FILE__ ).'images/avatar.jpg'
 		);
