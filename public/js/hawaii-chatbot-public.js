@@ -79,7 +79,7 @@
 							}
 						},
 						"I cannot provide 5 good references": {
-							action: "We cannot offer you an interview at this point. Hawaii assignments have stricter conditions We are however able to offer an interview after you had your first assignment."
+							action: "message1"
 						}
 					}
 				},
@@ -95,7 +95,7 @@
 						}
 					},
 					"My license is not current": {
-						action: "Please contact <a href='http://www.prometric.com'>www.prometric.com</a> to reinstate or clear your license and contact us again after your license is current."
+						action: "message3"
 					}
 				}
 			},
@@ -112,10 +112,18 @@
 
 				}
 				else if(obj.action == 'prea'){
-
+					window.location.href = 'https://travelcarehawaii.com/local-caregiver/';
 				}
 				else if(obj.action == 'preq'){
-
+					window.location.href = 'https://travelcarehawaii.com/apply/';
+				}
+				else if(obj.action == 'message1'){
+					await askQuestion('We cannot offer you an interview at this point. Hawaii assignments have stricter conditions We are however able to offer an interview after you had your first assignment.');
+					await askQuestion('We look forward to chat with you in the future');
+				}
+				else if(obj.action == 'message3'){
+					await askQuestion("Please contact <a href='http://www.prometric.com'>www.prometric.com</a> to reinstate or clear your license and contact us again after your license is current.");
+					await askQuestion('We look forward to chat with you in the future');
 				}
 				else {
 					askQuestion(obj.action);

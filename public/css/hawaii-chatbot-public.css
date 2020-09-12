@@ -107,7 +107,8 @@
     font-family: 'Roboto';
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
     box-shadow: 1px 1px 100px 2px rgba(0, 0, 0, 0.22);
     border-radius: 10px;
     -webkit-transition: all .2s ease-out;
@@ -221,7 +222,8 @@
 }
 
 .kudu_widget .chat.is-visible {
-    opacity: 1;
+    /* opacity: 1; */
+    display: block;
     -webkit-animation: kuduzoomIn .2s cubic-bezier(.42, 0, .58, 1);
     animation: kuduzoomIn .2s cubic-bezier(.42, 0, .58, 1);
 }
